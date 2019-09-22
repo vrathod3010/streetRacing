@@ -6,7 +6,8 @@ public abstract class BotCar
     protected Window _gameWindow;
     protected Bitmap _botCarBitmap;
     protected double _x, _y;
-    private int _lane;
+    private int _lane, _speed;
+
 
     public double X
     {
@@ -50,6 +51,7 @@ public abstract class BotCar
 
         _gameWindow = gameWindow;
         _lane = lane;
+        _speed = 4;
 
         if (_lane == 1)
         {
@@ -86,7 +88,11 @@ public abstract class BotCar
 
         if (SplashKit.KeyDown(KeyCode.UpKey) || SplashKit.KeyDown(KeyCode.WKey))
         {
-            _y += 2;
+            _y += _speed;
+        }
+        if (SplashKit.KeyDown(KeyCode.LeftShiftKey) || SplashKit.KeyDown(KeyCode.RightShiftKey))
+        {
+            _y += _speed;
         }
 
     }

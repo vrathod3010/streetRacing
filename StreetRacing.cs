@@ -7,11 +7,16 @@ using System.Collections.Generic;
 public class StreetRacing
 {
     private PlayerCar _playerCar;
+
+    private bool _quit;
     private bool _isGameOver;
     private List<BotCar> _botCars;
     private Track _track;
     private Window _gameWindow;
-
+    public bool Quit
+    {
+        get { return _quit; }
+    }
     public StreetRacing(Window gameWindow)
     {
         _gameWindow = gameWindow;
@@ -19,7 +24,9 @@ public class StreetRacing
         _track = new Track(_gameWindow);
         _botCars = new List<BotCar>();
         _isGameOver = false;
+        _quit = false;
     }
+
 
     public void Draw()
     {
@@ -61,6 +68,23 @@ public class StreetRacing
         BotCarsHandleInput();
         _playerCar.stayeOnWindow(_gameWindow);
         _track.HandleInput();
+        if (SplashKit.KeyReleased(KeyCode.FKey))
+        {
+            if (!_gameWindow.IsFullscreen)
+            {
+                _gameWindow.ToggleFullscreen();
+            }
+            else
+            {
+                _gameWindow.ToggleFullscreen();
+            }
+        }
+
+        if (SplashKit.KeyReleased(KeyCode.EscapeKey))
+        {
+            _quit = true;
+        }
+
     }
     public void BotCarsHandleInput()
     {

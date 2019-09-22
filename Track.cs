@@ -7,7 +7,7 @@ public class Track
 
     private Bitmap _grass;
     private double _y, _x;
-    private int _verticalSpeed = 5;
+    private int _speed = 5;
 
     public Track(Window gameWindow)
     {
@@ -112,11 +112,15 @@ public class Track
 
     public void HandleInput()
     {
-        int speed = _verticalSpeed;
-        _y += 5;
+
+        _y += _speed;
         if (SplashKit.KeyDown(KeyCode.UpKey) || SplashKit.KeyDown(KeyCode.WKey))
         {
-            _y += speed;
+            _y += _speed;
+        }
+        if (SplashKit.KeyDown(KeyCode.LeftShiftKey) || SplashKit.KeyDown(KeyCode.RightShiftKey))
+        {
+            _y += _speed;
         }
 
     }
