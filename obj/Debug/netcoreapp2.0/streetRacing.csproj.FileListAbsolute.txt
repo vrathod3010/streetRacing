@@ -1,0 +1,11 @@
+C:\msys64\home\vrath\streetRacing\bin\Debug\netcoreapp2.0\streetRacing.deps.json
+C:\msys64\home\vrath\streetRacing\bin\Debug\netcoreapp2.0\streetRacing.runtimeconfig.json
+C:\msys64\home\vrath\streetRacing\bin\Debug\netcoreapp2.0\streetRacing.runtimeconfig.dev.json
+C:\msys64\home\vrath\streetRacing\bin\Debug\netcoreapp2.0\streetRacing.dll
+C:\msys64\home\vrath\streetRacing\bin\Debug\netcoreapp2.0\streetRacing.pdb
+C:\msys64\home\vrath\streetRacing\obj\Debug\netcoreapp2.0\streetRacing.csprojAssemblyReference.cache
+C:\msys64\home\vrath\streetRacing\obj\Debug\netcoreapp2.0\streetRacing.csproj.CoreCompileInputs.cache
+C:\msys64\home\vrath\streetRacing\obj\Debug\netcoreapp2.0\streetRacing.AssemblyInfoInputs.cache
+C:\msys64\home\vrath\streetRacing\obj\Debug\netcoreapp2.0\streetRacing.AssemblyInfo.cs
+C:\msys64\home\vrath\streetRacing\obj\Debug\netcoreapp2.0\streetRacing.dll
+C:\msys64\home\vrath\streetRacing\obj\Debug\netcoreapp2.0\streetRacing.pdb
